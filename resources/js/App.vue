@@ -1,9 +1,7 @@
 <template>
-    <router-view />
+    <PublicLayout />
 </template>
 
 <script setup>
+import PublicLayout from './layouts/PublicLayout.vue';
 </script>
-
-<style scoped>
-</style>
