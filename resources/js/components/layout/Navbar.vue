@@ -27,13 +27,15 @@
             <!-- Mobile Navigation -->
             <nav class="flex flex-col gap-5">
                 <RouterLink v-for="item in navigationItems" :key="item.to" :to="item.to"
-                    class="text-base font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600" @click="closeMobileMenu">
+                    class="text-base font-medium text-gray-700 transition-colors duration-200 hover:text-blue-600"
+                    @click="closeMobileMenu">
                     {{ item.name }}
                 </RouterLink>
             </nav>
             <!-- Mobile CTA -->
             <RouterLink to="/login"
-                class="mt-8 inline-flex justify-center rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700">
+                class="mt-8 inline-flex justify-center rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white hover:bg-blue-700"
+                @click="closeMobileMenu">
                 Get Started
             </RouterLink>
         </div>
